@@ -1,0 +1,33 @@
+
+.sobre h2 {
+    text-align: center;
+    margin-top: 30rem;
+    color: rgb(195, 190, 190);
+}
+
+.redes {
+    width: 30px;
+    height: 30px;
+}
+
+.redessociais li {
+    list-style: none;
+    float: left;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.redessociais li span {
+    margin-left: 0.5rem;
+}
+
+.redessociais ul {
+    margin-bottom: 2rem;
+    margin-left: 18rem;
+
+}
+
+.redessociais span {
+    color: rgb(168, 168, 168);
+}

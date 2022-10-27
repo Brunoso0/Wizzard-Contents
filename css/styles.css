@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    background: rgb(34,31,36);
+    background: linear-gradient(90deg, rgba(34,31,36,1) 0%, rgb(50, 52, 50) 25%, rgb(68, 80, 73) 50%, rgba(50,52,50) 75%, rgba(34,31,36,1) 100%);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#sobrenos:target {
+  scroll-margin-top: 30rem;
+}
+
+#af:target {
+  scroll-margin-top: 7rem;
+}
+ 
+
+#header {
+    position: relative;
+  }
+#header img {
+    width: 100%;
+    height: 58.66rem;
+  }
+    .hover a {
+    text-decoration: none;
+    font-family: Tahoma, sans-seriff;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  .link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}
+.link::before,
+.link::after{
+content: '';
+position: absolute;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: #e65454;
+transform: scaleX(0);
+transition: transform .25s;
+}
+.link::before{
+    top: -3px;
+    transform-origin: left;
+}
+.link::after{
+    bottom: -3px;
+    transform-origin: right;
+}
+.link:hover::before,
+.link:hover::after{
+    transform: scaleX(1);
+}
+
+  #list {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.311);
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+  }
+.list ul {
+    list-style: none;
+    display: inline-block;
+    margin: 1.3rem;
+    padding: 0;
+    line-height: 1rem;
+  }
+ .hover li {
+    display: inline;
+    margin: 0 3rem;
+  }
+h1 {
+    font-family: 'Trispace', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40rem;
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 2.3rem;
+  }

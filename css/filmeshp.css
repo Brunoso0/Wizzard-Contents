@@ -1,0 +1,43 @@
+.filmeshp h1 {
+    margin-bottom: 6rem;
+    color: rgb(250, 252, 253);
+    font-family: 'Trispace', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 2.3rem;
+}
+
+.film img{
+    width: 200px;
+    height: 300px;
+    border-radius: 5%;
+    filter: grayscale();
+    transition: filter 0.5s ease-in-out;
+}
+
+.film img:hover {
+    filter: none;
+}
+
+.film a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.film {
+    text-align: center;
+}
+
+.film:hover {
+    transform: scale(1.03);
+}
+
+.container-filmeshp {
+    width: 900px;
+    margin-left: 25rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5rem;
+}

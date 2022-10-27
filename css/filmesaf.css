@@ -1,0 +1,23 @@
+.filmesaf h1 {
+    font-family: 'Trispace', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 12rem;
+    margin-bottom: 16.3rem;
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 2.3rem;
+}
+
+.films:hover {
+    transform: scale(1.03);
+}
+
+
+.container-filmesaf {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
