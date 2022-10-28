@@ -21,3 +21,29 @@
     margin-right: auto;
 }
 
+/* Telas com ate 1024 pixels */
+
+@media (max-width: 1024px) {
+    .container-filmesaf {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .filmesaf h1 {
+        font-family: 'Trispace', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        margin-top: 12rem;
+        margin-bottom: 16.3rem;
+        color: rgba(255, 255, 255, 0.671);
+        font-size: 2rem;
+    }
+
+    .container-filmesaf a {
+        font-size: 13px;
+    }
+}
+

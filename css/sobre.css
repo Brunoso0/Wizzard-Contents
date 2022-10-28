@@ -31,3 +31,49 @@
 .redessociais span {
     color: rgb(168, 168, 168);
 }
+
+/* Telas com ate 1024 pixels */
+
+@media (max-width: 1024px) {
+    .sobre h2 {
+        font-size: 18px;
+    }
+
+    .redessociais span {
+        font-size: 15px;
+    }
+
+    .redessociais li {
+        margin-left: 1rem;
+    }
+
+    .redessociais ul {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+ /* Telas com até 768 pixels */
+
+ @media (max-width: 768px) {
+    .sobre h2 {
+        font-size: 14px;
+    }
+
+    .redessociais span {
+        font-size: 11px;
+    }
+
+    .redessociais li {
+        margin-left: 1rem;
+    }
+
+    .redessociais ul {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}

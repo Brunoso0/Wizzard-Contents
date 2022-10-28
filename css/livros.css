@@ -1,11 +1,10 @@
 section h1 {
-        font-family: 'Trispace', sans-serif;
-        font-weight: 800;
-        text-align: center;
-        margin-top: 20rem;
-        color: rgba(255, 255, 255, 0.671);
-        font-size: 2.3rem;
-
+    font-family: 'Trispace', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20rem;
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 2.3rem;
 }
 .container {
 	position: relative;
@@ -109,4 +108,54 @@ section h1 {
     height: 30px;
 }
 
+/* Telas com ate 1024 pixels */
 
+@media  (max-width: 1024px) {
+	.container {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 0 -7rem;
+		width: 900px;
+		text-align: center;
+	}
+
+	section h1 {
+		font-family: 'Trispace', sans-serif;
+		font-weight: 800;
+		text-align: center;
+		margin-top: 20rem;
+		margin-left: 2rem;
+		color: rgba(255, 255, 255, 0.671);
+		font-size: 2.3rem;
+	}
+}
+
+/* Telas com até 768 pixels */
+
+@media  (max-width: 768px) {
+	.container {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-left: -9rem;
+		width: 680px;
+		text-align: center;
+	}
+
+	section h1 {
+		font-family: 'Trispace', sans-serif;
+		font-weight: 800;
+		text-align: center;
+		margin-top: 20rem;
+		margin-left: 2rem;
+		color: rgba(255, 255, 255, 0.671);
+		font-size: 2.3rem;
+	}
+}

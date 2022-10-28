@@ -1,5 +1,6 @@
 .filmeshp h1 {
     margin-bottom: 6rem;
+    margin-top: 40rem;
     color: rgb(250, 252, 253);
     font-family: 'Trispace', sans-serif;
     font-weight: 800;
@@ -41,3 +42,24 @@
     grid-template-columns: auto auto auto auto;
     grid-gap: 5rem;
 }
+
+/* Telas com ate 1024 pixels */
+
+@media (max-width: 1024px) {
+    .container-filmeshp {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns:  auto auto auto;
+        grid-gap: 5rem;
+    }
+
+    .film img{
+        width: 150px;
+        height: 200px;
+        border-radius: 5%;
+        filter: grayscale();
+        transition: filter 0.5s ease-in-out;
+    }
+  }
