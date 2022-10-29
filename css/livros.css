@@ -110,18 +110,18 @@ section h1 {
 
 /* Telas com ate 1024 pixels */
 
-@media  (max-width: 1024px) {
+@media (min-width: 900px) and (max-width: 1024px) {
 	.container {
-		position: relative;
-		z-index: 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		margin: 0 -7rem;
-		width: 900px;
-		text-align: center;
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 700px;
+		margin: 0;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
+
+	
 
 	section h1 {
 		font-family: 'Trispace', sans-serif;
@@ -134,19 +134,67 @@ section h1 {
 	}
 }
 
+@media (min-width: 1200px){ 
+	.container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		width: 1020px;
+		margin: 0;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
+
+	section h1 {
+		font-family: 'Trispace', sans-serif;
+		font-weight: 800;
+		text-align: center;
+		margin-top: 20rem;
+		margin-left: 2rem;
+		color: rgba(255, 255, 255, 0.671);
+		font-size: 2.3rem;
+		background-color: blueviolet;
+	}
+}
+
+@media (min-width: 1040px) and (max-width: 1200px) { 
+	.container {
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 700px;
+		margin: 0;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
+
+	section h1 {
+		font-family: 'Trispace', sans-serif;
+		font-weight: 800;
+		text-align: center;
+		margin-top: 20rem;
+		margin-left: 2rem;
+		color: rgba(255, 255, 255, 0.671);
+		font-size: 2.3rem;
+		background-color: blueviolet;
+	}
+}
+
 /* Telas com até 768 pixels */
 
-@media  (max-width: 768px) {
+@media(min-width: 720px) and (max-width: 768px) {
 	.container {
-		position: relative;
-		z-index: 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		margin-left: -9rem;
-		width: 680px;
-		text-align: center;
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 700px;
+		margin: 0;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	section h1 {

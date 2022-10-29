@@ -45,14 +45,55 @@
 
 /* Telas com ate 1024 pixels */
 
-@media (max-width: 1024px) {
+@media (min-width: 1200px) {
+    .container-filmeshp {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns:  auto auto auto auto;
+        grid-gap: 3rem;
+    }
+
+    .film img{
+        width: 190px;
+        height: 280px;
+        border-radius: 5%;
+        filter: grayscale();
+        transition: filter 0.5s ease-in-out;
+    }
+}
+
+@media (min-width: 1040px) and (max-width: 1200px) {
+    .container-filmeshp {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns:  auto auto auto auto;
+        grid-gap: 3rem;
+    }
+
+    .film img{
+        width: 190px;
+        height: 280px;
+        border-radius: 5%;
+        filter: grayscale();
+        transition: filter 0.5s ease-in-out;
+    }
+
+    
+}
+
+
+@media (min-width: 900px) and (max-width: 1024px) {
     .container-filmeshp {
         width: 600px;
         margin-left: auto;
         margin-right: auto;
         display: grid;
         grid-template-columns:  auto auto auto;
-        grid-gap: 5rem;
+        grid-gap: 2rem;
     }
 
     .film img{
@@ -62,4 +103,6 @@
         filter: grayscale();
         transition: filter 0.5s ease-in-out;
     }
+
+   
   }
