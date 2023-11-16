@@ -1,0 +1,563 @@
+body {
+  transition: background-image 0.9s;
+  background-image: url("/img/oculos.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden; /* Evitar scroll na página */
+}
+
+#menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 230px;
+  background-color: #39343453;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#menu a:hover {
+  cursor: pointer;
+}
+
+#menu img {
+  margin-left: -25px;
+  width: 40px;
+  height: 40px;
+  transition: margin-left 0.3s ease-out;
+}
+
+
+#menu span {
+  margin-left: -150px;
+  opacity: 0;
+  transition: margin-left 0.3s ease-in, opacity 0.30s ease-in-out;
+}
+
+#menu a:hover span {
+  opacity: 1;
+  margin-left: 20px;
+}
+
+/* background */
+
+.button-container {
+  position: fixed;
+  bottom: 0;
+}
+
+.button-container button {
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(87, 150, 156, 0.524);
+  color: #FFF;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  transform: scaleX(1.1);
+}
+
+.button-container h1 {
+text-align: center;
+color: #FFF;
+font-size: 19px;
+}
+
+
+
+
+#content {
+  margin-left: 220px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  width: 23%; /* Definindo 23% para garantir que haja no máximo 4 boxes por linha */
+  height: 150px; /* Altura desejada para suas caixas */
+  background-color: #ddd;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  /* Estilos para telas menores que 480px de largura */
+  #menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 70px;
+    background-color: #39343453;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  #menu a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #menu a:hover {
+    cursor: pointer;
+  }
+  
+  #menu img {
+    margin-left: -10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  #menu span {
+    display: none;
+  }
+  
+  #menu a:hover span {
+    display: none;
+  }
+
+
+
+  /* background */
+
+.button-container {
+  position: fixed;
+  bottom: 0;
+}
+
+.button-container button {
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(87, 150, 156, 0.524);
+  color: #FFF;
+  padding: 6px;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.button-container button:hover {
+  display: none;
+}
+
+.button-container h1 {
+display: none;
+}
+
+/* conteudo */
+
+#content {
+  margin-left: 220px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  width: 23%; /* Definindo 23% para garantir que haja no máximo 4 boxes por linha */
+  height: 100px; /* Altura desejada para suas caixas */
+  background-color: #ddd;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px !important; /* Defina a largura máxima desejada */
+}
+
+.container {
+ /* width: calc(25% - 20px); 25% width with a 20px margin on each side */ 
+  height: 120px !important;
+  margin: 20px!important;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container img {
+  width: 100px !important; 
+  height: 146px !important;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+}
+
+
+
+@media screen and (min-width: 639px) and (max-width: 1024px) {
+  /* Estilos para telas entre 769px e 1024px de largura */
+  #menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 150px;
+    background-color: #39343453;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  #menu a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #menu a:hover {
+    cursor: pointer;
+  }
+  
+  #menu img {
+    margin-left: -10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  
+  #menu span {
+    display: none;
+  }
+  
+  #menu a:hover span {
+    display: none;
+  }
+
+
+
+  /* background */
+
+.button-container {
+  position: fixed;
+  bottom: 0;
+}
+
+.button-container button {
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(87, 150, 156, 0.524);
+  color: #FFF;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.button-container button:hover {
+  display: none;
+}
+
+.button-container h1 {
+font-size: 15px;
+}
+
+/* conteudo */
+
+#content {
+  margin-left: 220px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  width: 23%; /* Definindo 23% para garantir que haja no máximo 4 boxes por linha */
+  height: 100px; /* Altura desejada para suas caixas */
+  background-color: #ddd;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  max-width: 70% !important; /* Defina a largura máxima desejada */
+}
+
+.container {
+ /* width: calc(25% - 20px); 25% width with a 20px margin on each side */ 
+  height: 160px !important;
+  margin: 20px!important;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container img {
+  width: 100px !important; 
+  height: 146px !important;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  /* Estilos para telas entre 1025px e 1366px de largura */
+  #menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 230px;
+    background-color: #39343453;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+  }
+  
+  #menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #menu a:hover {
+    cursor: pointer;
+  }
+  
+  #menu img {
+    margin-left: -25px;
+    width: 40px;
+    height: 40px;
+    transition: margin-left 0.3s ease-out;
+  }
+  
+  
+  #menu span {
+    margin-left: -150px;
+    opacity: 0;
+    transition: margin-left 0.3s ease-in, opacity 0.30s ease-in-out;
+  }
+  
+  #menu a:hover span {
+    opacity: 1;
+    margin-left: 20px;
+  }
+  
+  /* background */
+  
+  .button-container {
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .button-container button {
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(87, 150, 156, 0.524);
+    color: #FFF;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .button-container button:hover {
+    transform: scaleX(1.1);
+  }
+  
+  .button-container h1 {
+  text-align: center;
+  color: #FFF;
+  font-size: 19px;
+  }
+  
+  
+  
+  
+  #content {
+    margin-left: 220px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .box {
+    width: 23%; /* Definindo 23% para garantir que haja no máximo 4 boxes por linha */
+    height: 150px; /* Altura desejada para suas caixas */
+    background-color: #ddd;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .box img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 60% !important; /* Defina a largura máxima desejada */
+}
+
+.container {
+    /* width: calc(25% - 20px); 25% width with a 20px margin on each side */
+    height: 270px;
+    margin: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container img {
+    width: 180px;
+    height: 280px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+}
