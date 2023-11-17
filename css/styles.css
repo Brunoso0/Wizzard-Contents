@@ -1,6 +1,6 @@
 body {
   transition: background-image 0.9s;
-  background-image: url("/img/oculos.jpg");
+  background-image: url("../img/oculos.jpg");
             background-size: cover;
             background-position: center;
             display: flex;
